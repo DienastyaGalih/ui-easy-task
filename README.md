@@ -44,3 +44,14 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+FORM UI
+
+{"type": "VerticalLayout", "elements": [{"text": "Request Form", "type": "Label"}, {"type": "Control", "scope": "#/properties/name"}, {"type": "Control", "scope": "#/properties/team"}, {"type": "Control", "scope": "#/properties/projectName"}, {"type": "Group", "label": "Project period", "elements": [{"type": "HorizontalLayout", "label": "Project period", "elements": [{"type": "Control", "scope": "#/properties/projectStart"}, {"type": "Control", "scope": "#/properties/projectEnd"}]}]}, {"type": "VerticalLayout", "elements": [{"type": "Control", "scope": "#/properties/rincianAggaran"}]}, {"type": "VerticalLayout", "elements": [{"type": "Control", "scope": "#/properties/budgetAllocation"}]}]}
+
+
+
+FORM VALIDATION
+
+{"type": "object", "required": ["name", "team", "projectName"], "properties": {"name": {"type": "string"}, "team": {"type": "string"}, "height": {"type": "number"}, "rating": {"type": "integer"}, "address": {"type": "object", "properties": {"city": {"type": "string"}, "street": {"type": "string"}, "postalCode": {"type": "string"}, "streetnumber": {"type": "string"}}}, "committer": {"type": "boolean"}, "projectEnd": {"type": "string", "format": "date"}, "projectName": {"type": "string"}, "projectStart": {"type": "string", "format": "date"}, "rincianAggaran": {"type": "array", "items": {"type": "object", "properties": {"price": {"type": "number"}, "nominal": {"type": "number"}, "quantity": {"type": "number"}, "description": {"type": "string"}}}}, "budgetAllocation": {"type": "array", "items": {"type": "object", "properties": {"name": {"type": "string"}, "percentage": {"type": "number"}, "productAllocation": {"enum": ["Ruang Belajar", "Robo Guru"], "type": "string"}, "teamBudgetAllocation": {"enum": ["Web SEO", "Enterprise"], "type": "string"}}}}}}

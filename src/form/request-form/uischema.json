@@ -1,0 +1,59 @@
+{
+    "type": "VerticalLayout",
+    "elements": [
+        {
+            "type": "Label",
+            "text": "Request Form"
+        },
+        {
+            "type": "Control",
+            "scope": "#/properties/name"
+        },
+        {
+            "type": "Control",
+            "scope": "#/properties/team"
+        },
+        {
+            "type": "Control",
+            "scope": "#/properties/projectName"
+        },
+        {
+            "type": "Group",
+            "label": "Project period",
+            "elements": [
+                {
+                    "type": "HorizontalLayout",
+                    "label": "Project period",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/projectStart"
+                        },
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/projectEnd"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "VerticalLayout",
+            "elements": [
+                {
+                    "type": "Control",
+                    "scope": "#/properties/rincianAggaran"
+                }
+            ]
+        },
+        {
+            "type": "VerticalLayout",
+            "elements": [
+                {
+                    "type": "Control",
+                    "scope": "#/properties/budgetAllocation"
+                }
+            ]
+        }
+    ]
+}

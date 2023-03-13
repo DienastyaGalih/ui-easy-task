@@ -1,0 +1,109 @@
+{
+    "type": "object",
+    "required": [
+        "name",
+        "team",
+        "projectName"
+    ],
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "team": {
+            "type": "string"
+        },
+        "projectName": {
+            "type": "string"
+        },
+        "gender": {
+            "type": "string",
+            "enum": [
+                "Male",
+                "Female",
+                "Undisclosed"
+            ]
+        },
+        "height": {
+            "type": "number"
+        },
+        "projectStart": {
+            "type": "string",
+            "format": "date"
+        },
+        "projectEnd": {
+            "type": "string",
+            "format": "date"
+        },
+        "rating": {
+            "type": "integer"
+        },
+        "committer": {
+            "type": "boolean"
+        },
+        "address": {
+            "type": "object",
+            "properties": {
+                "street": {
+                    "type": "string"
+                },
+                "streetnumber": {
+                    "type": "string"
+                },
+                "postalCode": {
+                    "type": "string"
+                },
+                "city": {
+                    "type": "string"
+                }
+            }
+        },
+        "rincianAggaran": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "description": {
+                        "type": "string"
+                    },
+                    "price": {
+                        "type": "number"
+                    },
+                    "quantity": {
+                        "type": "number"
+                    },
+                    "nominal": {
+                        "type": "number"
+                    }
+                }
+            }
+        },
+        "budgetAllocation": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "percentage": {
+                        "type": "number"
+                    },
+                    "productAllocation": {
+                        "type": "string",
+                        "enum": [
+                            "Ruang Belajar",
+                            "Robo Guru"
+                        ]
+                    },
+                    "teamBudgetAllocation": {
+                        "type": "string",
+                        "enum": [
+                            "Web SEO",
+                            "Enterprise"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}
